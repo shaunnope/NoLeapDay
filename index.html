@@ -1,0 +1,51 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title> The Perfect Clock </title>
+  <script language="javascript" type="text/javascript" src="libraries/moment.js"></script>
+  <script language="javascript" type="text/javascript" src="sketch.js"></script>
+
+  <style>
+
+  * {font-family:  "Lucida Console", monospace}
+
+  body {padding: 0; margin: 0;}
+  h1 {text-align: center}
+
+  p {text-align: center}
+
+  span.time {font-size: 80}
+  span.date {font-size: 55}
+
+  </style>
+</head>
+
+<body onload = "init()">
+
+  <div id="txt"></div>
+  <div> <h1> The Perfect Clock </h1> </div>
+
+  <div>
+    <h2> True Time </h2>
+    <p id = "True">
+      <span id = "trueTime" class = "time"> 00:00:00 </span>
+      <br> <br>
+      <span id = "trueDate" class = "date"> 00 Jan 00 </span>
+    </p>
+  </div>
+
+  <div>
+    <h2> Leaping Time </h2>
+    <p class = "clock">
+      <span id = "leapTime" class = "time"> 00:00:00 </span>
+      <br> <br>
+      <span id = "leapDate" class = "date"> 00 Jan 00 </span>
+    </p>
+  </div>
+
+  <div id = "clock"> </div>
+
+
+</body>
+</html>
