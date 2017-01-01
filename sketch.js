@@ -43,5 +43,5 @@ function startTime() {
     }
 
 
-    var t = setTimeout(startTime, 500);
+    var t = setTimeout(startTime, 100);
 }
