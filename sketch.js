@@ -23,7 +23,7 @@ function startTime() {
     moment(today).format("HH:mm:ss");
 
     document.getElementById('leapDate').innerHTML =
-    moment(today).format("D MMM YY");
+    moment(today).format("DD MMM YY");
 
     //Modified Time
     var diff = r * (today - Epoch);
@@ -38,7 +38,7 @@ function startTime() {
       moment(trueDay).add(1,'d').format("D MMM YY");
     } else {
       document.getElementById('trueDate').innerHTML =
-      moment(trueDay).format("D MMM YY");
+      moment(trueDay).format("DD MMM YY");
     }
 
 
