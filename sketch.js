@@ -8,7 +8,6 @@ var r = 1460/1461;
 function setup() {
 
   noCanvas();
-  // createCanvas(600,500);
 
 }
 
@@ -26,7 +25,7 @@ function startTime() {
     document.getElementById('leapDate').innerHTML =
     moment(today).format("D MMM YY");
 
-
+    //Modified Time
     var diff = r * (today - Epoch);
     var trueDay = moment(diff + Epoch.getTime());
 
@@ -43,5 +42,5 @@ function startTime() {
     }
 
 
-    var t = setTimeout(startTime, 500);
+    var t = setTimeout(startTime, 1000);
 }
